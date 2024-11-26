@@ -1,9 +1,9 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: Linux build active file",
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: Linux build active file",
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-std=c++20",
@@ -33,10 +33,10 @@
 				"isDefault": true
 			},
 			"detail": "compiler: /usr/bin/clang++"
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: macOS build active file",
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: macOS build active file",
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-std=c++20",
@@ -46,8 +46,9 @@
 				"-g",
 				"-I${workspaceFolder}/dependencies/include",
 				"-L${workspaceFolder}/dependencies/library",
-				"${workspaceFolder}/*.cpp",
 				"${workspaceFolder}/dependencies/library/libglfw.3.4.dylib",
+				"${workspaceFolder}/*.cpp",
+				"${workspaceFolder}/glad.c",
 				"-o",
 				"${workspaceFolder}/app",
 				"-framework",
@@ -71,6 +72,6 @@
 				"isDefault": true
 			},
 			"detail": "compiler: /usr/bin/clang++"
-        }
-    ]
+		}
+	]
 }
