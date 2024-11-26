@@ -1,56 +1,55 @@
-
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Linux Build and Debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/app",
-            "preLaunchTask": "C/C++: Linux build active file",  // This runs the Linux build task
-            "miDebuggerPath": "/usr/bin/gdb",  // Adjust if necessary for your platform
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "miDebuggerArgs": "",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "logging": {
-                "moduleLoad": false,
-                "trace": true,
-                "traceResponse": true
-            }
-        },
-        {
-            "name": "macOS Build and Debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/app",
-            "preLaunchTask": "C/C++: macOS build active file",  // This runs the macOS build task
-            "miDebuggerPath": "/usr/bin/lldb",  // Adjust if necessary for your platform
-            "stopAtEntry": false,
-            "externalConsole": false,
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for lldb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "miDebuggerArgs": "",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "logging": {
-                "moduleLoad": false,
-                "trace": true,
-                "traceResponse": true
-            }
-        }
-    ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Linux Build and Debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/app",
+			"preLaunchTask": "C/C++: Linux build active file", // This runs the Linux build task
+			"miDebuggerPath": "/usr/bin/gdb", // Adjust if necessary for your platform
+			"stopAtEntry": false,
+			"externalConsole": false,
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"miDebuggerArgs": "",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"logging": {
+				"moduleLoad": false,
+				"trace": true,
+				"traceResponse": true
+			}
+		},
+		{
+			"name": "macOS Build and Debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/app",
+			"preLaunchTask": "C/C++: macOS build active file", // This runs the macOS build task
+			"miDebuggerPath": "/usr/bin/lldb", // Adjust if necessary for your platform
+			"stopAtEntry": false,
+			"externalConsole": false,
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for lldb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"miDebuggerArgs": "",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"logging": {
+				"moduleLoad": false,
+				"trace": true,
+				"traceResponse": true
+			}
+		}
+	]
 }
